@@ -18,7 +18,7 @@ function Product() {
         {productData ? (
           productData.map((product) => {
             return (
-              <ProductCards
+              <ProductCards key={product.id}
                 id={product.id}
                 image={product.image}
                 title={product.title}
